@@ -1,26 +1,10 @@
+import { MainNav } from '@/components/main-nav'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-5xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <Link href="/" className="text-xl font-bold text-slate-900">
-              SKF Plattform
-            </Link>
-            <div className="flex gap-6 items-center">
-              <Link href="/nyheter" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
-                Nyheter
-              </Link>
-              <Link href="/valj-roll" className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
-                Demo
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <MainNav />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 border-b border-slate-200">

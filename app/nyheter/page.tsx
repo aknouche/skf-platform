@@ -1,3 +1,4 @@
+import { MainNav } from '@/components/main-nav'
 import Link from 'next/link'
 
 const newsItems = [
@@ -34,24 +35,7 @@ const newsItems = [
 export default function Nyheter() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="border-b border-slate-200 bg-white sticky top-0 z-10">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <Link href="/" className="text-xl font-bold text-slate-900 hover:text-slate-700 transition-colors">
-              SKF Plattform
-            </Link>
-            <div className="flex gap-6 items-center">
-              <Link href="/nyheter" className="text-sm font-medium text-blue-600">
-                Nyheter
-              </Link>
-              <Link href="/valj-roll" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
-                Demo
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <MainNav />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 border-b border-slate-200">
