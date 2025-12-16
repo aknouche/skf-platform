@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export function MainNav() {
@@ -17,7 +18,14 @@ export function MainNav() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-xl font-bold text-slate-900 hover:text-slate-700 transition-colors">
-            SKF
+            <Image
+              src="/skflogo.jpeg"
+              alt="SKF Logo"
+              width={32}
+              height={32}
+              className="rounded"
+            />
+            <span>SKF</span>
           </Link>
 
           {/* Main Navigation */}

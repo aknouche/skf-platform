@@ -5,6 +5,9 @@ import { RoleProvider } from "@/lib/role-context";
 export const metadata: Metadata = {
   title: "SKF Platform",
   description: "SKF Platform",
+  icons: {
+    icon: '/skflogo.jpeg',
+  },
 };
 
 export default function RootLayout({
