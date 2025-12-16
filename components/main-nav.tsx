@@ -8,12 +8,7 @@ export function MainNav() {
 
   const links = [
     { href: '/', label: 'Start' },
-    { href: '/tavlingar', label: 'Tävlingar' },
-    { href: '/utovare-klubbar', label: 'För utövare & klubbar' },
-    { href: '/landslaget', label: 'Landslaget' },
-    { href: '/kommitteer', label: 'Kommittéer' },
-    { href: '/nyheter', label: 'Nyheter' },
-    { href: '/om-forbundet', label: 'Om förbundet' },
+    { href: '/nyheter', label: 'Nyheter & Förbundet' },
   ]
 
   return (

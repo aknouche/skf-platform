@@ -41,10 +41,10 @@ export default function Nyheter() {
       <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-6 py-16 text-center">
           <h1 className="text-5xl font-bold text-slate-900 mb-4">
-            Förbundet & Nyheter
+            Nyheter & Förbundet
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Information från Svenska Kickboxningsförbundet
+            Information och nyheter från Svenska Kickboxningsförbundet
           </p>
         </div>
       </div>
