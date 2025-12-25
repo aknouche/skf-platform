@@ -9,7 +9,8 @@ export function MainNav() {
 
   const links = [
     { href: '/', label: 'Start' },
-    { href: '/nyheter', label: 'Nyheter & Förbundet' },
+    { href: '/nyheter', label: 'Nyheter' },
+    { href: '/om-oss', label: 'Om oss' },
   ]
 
   return (

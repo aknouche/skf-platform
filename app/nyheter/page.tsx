@@ -41,10 +41,10 @@ export default function Nyheter() {
       <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-6 py-16 text-center">
           <h1 className="text-5xl font-bold text-slate-900 mb-4">
-            Nyheter & Förbundet
+            Nyheter
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Information och nyheter från Svenska Kickboxningsförbundet
+            Senaste nyheterna från Svenska Kickboxningsförbundet
           </p>
         </div>
       </div>
@@ -123,30 +123,21 @@ export default function Nyheter() {
 
           {/* Sidebar */}
           <div className="space-y-8">
-            {/* About Federation */}
-            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">
-                Om förbundet
-              </h3>
-              <div className="space-y-3 text-sm text-slate-700 leading-relaxed">
-                <p>
-                  <strong>Svenska Kickboxningsförbundet (SKF)</strong> är specialidrottsförbund under Riksidrottsförbundet och arbetar för att utveckla kickboxning i Sverige.
-                </p>
-                <p>
-                  Vi ansvarar för landslag, utbildningar, tävlingar och stöd till föreningar och utövare runt om i landet.
-                </p>
-                <p>
-                  Genom Strategi 2030 arbetar vi för en modern, digital plattform som samlar alla delar av verksamheten.
-                </p>
-              </div>
-            </div>
-
             {/* Quick Links */}
             <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-semibold text-slate-900 mb-4">
                 Snabblänkar
               </h3>
               <div className="space-y-2">
+                <Link
+                  href="/om-oss"
+                  className="flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                  Om förbundet
+                </Link>
                 <Link
                   href="/valj-roll"
                   className="flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 transition-colors"
